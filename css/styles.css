@@ -28,7 +28,7 @@ body {
     display: inline-flex;
     height: 38px;
     padding: 0 20px;
-    background-color: #FF6B6B;
+    background-color: #039CDD;
     border-radius: 4px;
     color: #fff;
     align-items: center;
@@ -40,6 +40,10 @@ body {
 
   .btn-secondary{
     background-color: #039CDD;
+  }
+  .btn-secondary:hover{
+    background-color: #039CDD;
+    text-decoration: none;
   }
 
  
@@ -92,8 +96,8 @@ body {
     margin: 0;
   }
   h2 {
-    font-size: 30px;
-    color: #6457A6;
+    font-size: 40px;
+    color: #FF6B6B;
     font-weight: 600;
     letter-spacing: -0.5px;
     line-height: 35px;
@@ -106,8 +110,14 @@ body {
     letter-spacing: -0.2px;
     margin: 0;
   }
-  .section-spacer-top{
+  .section-spacer-top-sm{
       margin-top:25px;
+  }
+  .section-spacer-top-md{
+    margin-top:45px;
+  }
+  .section-spacer-top-lg{
+    margin-top:120px;
   }
   .section-spacer-bottom{
     margin-bottom:30px;
@@ -115,6 +125,14 @@ body {
   .section-width{
       width:360px;
   }
+  .section-pos-bot{
+    position: relative; 
+   top:40%;
+}
+.section-pos-bot-md{
+  position: relative; 
+  top: 20%;
+}
   .carousel-nav-text-mr{
     margin-left: 10px;
   }
@@ -131,10 +149,26 @@ body {
     position: absolute;
     border-radius: 8px;
     box-shadow: 0 0 0 1px rgba(39, 39, 39, 0.1), 0 10px 20px 0 rgba(39, 39, 39, 0.05);
-    background-image: url('images/track-hero.png');
     background-size: 721px 598px;
     height: 598px;
     width: 721px;
+  }
+  .section-box{
+    width: 100%; 
+    position: relative; 
+    justify-self: end
+  }
+  .grid-center{
+    justify-self: start;
+    align-self: start;
+  }
+  .section-img-container{
+    box-shadow: 0 0 0 1px rgba(25,4,69, 0.1), 0 10px 20px 0 rgba(25,4,69, 0.05);
+    border-radius: 8px;
+    background-size: 711px 796px;
+    background-position-y: -34px;
+    height: 670px;
+    width: 711px
   }
   .logo {
     width: 107px;
@@ -524,6 +558,7 @@ body {
   .grid-container .large-img-bkgd {
     background-repeat: no-repeat;
   }
+
   @media (max-width: 900px) {
     .grid-container .large-img-bkgd {
       width: 100% !important;
