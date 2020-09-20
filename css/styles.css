@@ -10,12 +10,42 @@ h1{
   font-weight: 700;
   margin: 0;
 }
-p{
+h5 {
+  font-size: 18px;
+  color: #FF6B6B;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+p {
   color: rgba(39,39,39,0.6);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  line-height: 20px;
+  letter-spacing: 0;
+  
+}
+.header-spacer5{
+  margin-top: 5%;
+}
+.header-spacer4{
+  margin-top: 4%;
+}
+.header-spacer3{
+  margin-top: 3%;
+}
+.header-spacer2{
+  margin-top: 2%;
+}
+.card-body p{
+    color: rgba(39,39,39,0.6);
     font-weight: 400;
-    font-size: 18px;
-    margin: 1;
-    line-height: 23px;
+    font-size: 15px;
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 0;
+    padding-bottom: 10%;
 }
 
 /* Header Styles */
@@ -27,7 +57,7 @@ p{
 .header-fold{
   z-index: -1;
   position: absolute;
-  height: 700px;
+  height: 550px;
   width: 100%;
   top: 0;
   left: 0;
@@ -35,9 +65,34 @@ p{
   border-bottom: 1px solid rgba(100,87,166,0.1);
 }
 
+.footer-fold{
+  z-index: -1;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: 1;
+  left: 0;
+  background-color:rgba(251,251,255,0.1);
+  border-bottom: 1px solid rgba(100,87,166,0.1);
+}
 /* Button Styles */
+
+/* BTN Primary */
+.btn.btn-primary.active.focus,
+.btn.btn-primary.active:focus,
+.btn.btn-primary.active:hover,
+.btn.btn-primary:active.focus,
+.btn.btn-primary:active:focus,
+.btn.btn-primary:active:hover{
+  color: #fff;
+  background-color: #039CDD;
+  border-color: #039CDD;
+  outline: none;
+  box-shadow: none;
+}
+
 .btn-primary{
-  background-color: #FFF;
+  background-color: #fff;
   border: solid 1px #039CDD;
   color: #039CDD;
   box-shadow: none;
@@ -48,6 +103,24 @@ p{
   color: white;
 }
 .btn-primary:focus{
+  box-shadow: none;
+  background-color: #fff;
+  border: solid 1px #039CDD;
+  color: #039CDD;
+}
+
+
+/* BTN Secondary */
+.btn.btn-secondary.active.focus,
+.btn.btn-secondary.active:focus,
+.btn.btn-secondary.active:hover,
+.btn.btn-secondary:active.focus,
+.btn.btn-secondary:active:focus,
+.btn.btn-secondary:active:hover {
+  color: #fff;
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+  outline: none;
   box-shadow: none;
 }
 
@@ -64,7 +137,11 @@ p{
 }
 .btn-secondary:focus{
   box-shadow: none;
+  background-color: #fff;
+  border: solid 1px #FF6B6B;
+  color: #FF6B6B;
 }
+
 
 
  /* Nav Styles */
@@ -93,6 +170,7 @@ p{
   padding-right: 10px;
   max-width: 520px;
 }
+
 #intro_0{
   background-image: url('/img/test.png');
   width:100%;
@@ -120,6 +198,7 @@ p{
   .intro-switch h6 {
     color: #272727;
   }
+
 
   
   .intro-switch.selected .icon,
@@ -164,9 +243,30 @@ p{
   .section-padding{padding-top:370px}
 }
 @media(min-width:1200px){
-  .section-padding{padding-top:390px}
+  .section-padding{padding-top:340px}
 }
 
+/* Footer Padding Rules */
+.section-padding-footer{
+  padding-top:470px
+}
+@media(min-width:400px){
+  .section-padding-footer{padding-top:470px}
+}
+@media(min-width:768px){
+  .section-padding-footer{padding-top:470px}
+}
+@media(min-width:992px){
+  .section-padding-footer{padding-top:470px}
+}
+@media(min-width:1200px){
+  .section-padding-footer{padding-top:470px}
+}
+
+
+.padding-spacer{
+  padding-left: 5px;
+}
 /* Card Rules */
 .card-body{
   padding-left: 0px;
@@ -177,12 +277,23 @@ p{
   background-color: transparent;
   border: none;
 }
-.image-box {
+
+.card-img-top{
   width: 100%;
   min-height: 212px;
   border-radius: 8px;
   border: 1px solid rgba(39,39,39,0.1);
   box-shadow: 0px 4px 10px rgba(39,39,39,0.1);
-
-  margin-bottom: 10px;
 }
+.card{
+  background-color: transparent;
+  border: none;  
+}
+
+.footer-nav-link-color a{
+  color:#039CDD;
+  text-decoration: none;
+}
+
+
+

@@ -1,152 +1,204 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
 
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-  <!-- Additional CSS must be placed after Bootstrap CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
 
 
-  <title>Trakr - The Job Tracking Tool</title>
-</head>
+    <title>Trakr - The Job Tracking Tool</title>
+  </head>
 
-<body>
-  <!-- Begin Header -->
-  <header>
-    <div class="container header-border">
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="nav-brand pt-2 " href="#"><img src="img/logo.png" /></a>
-        <div class="collapse navbar-collapse justify-content-end pt-2">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link btn-rounded btn-sm btn-primary">Sign up for free</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+ 
+    <!-- Begin Header -->
+    <header>
+      <div class="container header-border">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <a class="nav-brand pt-2 " href="#"><img src="img/logo.png" /></a>
+          <div class="collapse navbar-collapse justify-content-end pt-2">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link btn-rounded btn-sm btn-primary">Sign up for free</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <body>
+    <!-- End of Header -->
+    <div class="header-fold">
+      &nbsp;
     </div>
 
-  </header>
-  <!-- End of Header -->
-  <div class="header-fold">
-    &nbsp;
-  </div>
+    <div class="container">
 
-  <div class="container">
-
-    <div class="row row-content" style="padding-top: 60px;">
-      <div class="col-sm-12 col-md-4 center-hero-text">
-        <div class="row row-content">
-          <div class="col intro-switch">
-            <div id="intro_link0" onclick="setIntroImg(0)" class="intro-switch selected  ease-all"
-              style="padding-right: 20px;">
-              <span class="icon icon-folder-alt"></span>
-              <h6>Track</h6>
+      <div class="row row-content" style="padding-top: 60px;">
+        <div class="col-sm-12 col-md-4 center-hero-text">
+          <div class="row row-content">
+            <div class="col intro-switch">
+              <div id="intro_link0" onclick="setIntroImg(0)" class="intro-switch selected  ease-all"
+                style="padding-right: 20px;">
+                <span class="icon icon-folder-alt"></span>
+                <h6>Track</h6>
+              </div>
+              <div id="intro_link1" onclick="setIntroImg(1)" class="intro-switch ease-all ">
+                <span class="icon icon-compass"></span>
+                <h6>Discover</h6>
+              </div>
             </div>
-            <div id="intro_link1" onclick="setIntroImg(1)" class="intro-switch ease-all ">
-              <span class="icon icon-compass"></span>
-              <h6>Discover</h6>
+          </div>
+          <h1 style="padding-top: 8%;">Plan out your unique path</h1>
+          <p class="header-spacer5">Organize your job search with a tool that understands you as well as
+            you
+            do, all in one place. </p>
+          <div class="row row-content" style="padding-bottom: 5%; padding-right: 20%; padding-top: 10%; float: right;">
+            <a href="#" class="btn btn-sm btn-secondary ">Join Today!</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div id="intro_0" class="ease-all hide large-img-bkgd carousel-container"></div>
+          <div id="intro_1" class=" large-img-bkgd carousel-container"></div>
+        </div>
+      </div>
+      
+        <div class="row row-content section-padding ">
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kanban Layout</h5>
+                <p class="card-text">Organize your job search through a visually interactive Kanban board experience. Keep track of progress, applications, and activities all in one place.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">In-Depth Details</h5>
+                <p class="card-text">Every position is a unique path to success. Build each opportunity exclusively from one another and detail each role including company information, job qualifications, salary and much more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Task Master</h5>
+                <p class="card-text">View a visual timeline of all your job activities and track every step along the way. From application, interview, and to job offer. Mark important dates, reminders and reminders.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Personal Filters</h5>
+                <p class="card-text">Find matching keywords and tags for skillsets, qualifications, titles, and any other filters including: senority level, location, company and roles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Mapped Out</h5>
+                <p class="card-text">Use the map to visualize the distance of every job from your home location. Find the perfect job that matches the perfect geographic location.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="/img/placeholder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Interview Preparation</h5>
+                <p class="card-text">Document each topic, technical question, or programming challenge asked during personal interview experience or by recommended sources. Tag each problems and Trakr will automcatically add them to study guides for future jobs with similiar requirements.</p>
+              </div>
             </div>
           </div>
         </div>
-        <h1 style="padding-top: 8%;">Plan out your unique path</h1>
-        <p class="section-spacer-top-sm">Organize your job search with a tool that understands you as well as
-          you
-          do, all in one place. </p>
-        <div class="row row-content" style="padding-bottom: 5%; padding-right: 20%; float: right;">
-          <a href="#" class="btn btn-sm btn-secondary">Join Today!</a>
+
+        <div class="row row-content " style="padding-top: 60px;">
+          <div class="col-sm-12 ">
+            <h1>Crunch the Numbers</h1>
+            <p class="header-spacer2 padding-spacer col-sm-12">
+              Hiring managers use metrics all the time to hire candidates, let Trakr do something similiar. 
+              Trakr is able to collect the data on all the positions you've applied for and determine the potential success of your future job prospects.
+              Interact with a visual experience of statistics, job requirement comparrisons, and job roles matching your background.
+            </p>
+              <div class="row row-content header-spacer2 col-sm-12 mx-auto" style="padding-bottom: 100px;">
+                <div id="intro_0" class="large-img-bkgd carousel-container"></div>
+              </div>
+          </div>
+        </div>
+<!-- Footer -->
+<footer>
+
+  <div class="container pt-5 border-bottom" style="margin-left: 15px;">
+
+      <div class="row row-content section-padding-footer mx-auto">
+
+        <div class="col-sm-3 mx-auto">
+          <a href="#"><img src="img/logo.png" /></a></div>
+        <div class="col-sm-3 mx-auto">
+          <h5 class="mb-2 font-weight-bold text-uppercase">Navigation</h5>
+        <ul class="list-group footer-nav-link-color">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../sales/sales-performance-market-pipeline.html">Login</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="href="../project-management/project-management.html"">Sign Up</a></li>
+        </ul>
+        </div>
+
+        <div class="col-sm-3 mx-auto">
+          <h5 class="mb-2 font-weight-bold text-uppercase">About Us</h5>
+        <ul class="list-group footer-nav-link-color">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://github.com/naologic">Company</a></li>
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://stackshare.io/naologic">GitHub</a></li>
+        </ul>
+        </div>
+
+        <div class="col-sm-3 mx-auto">
+          <h5 class="mb-2 font-weight-bold text-uppercase">Contact Us</h5>
+        <ul class="list-group footer-nav-link-color">
+          <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://github.com/naologic">Email</a></li>
+        </ul>
         </div>
       </div>
-      <div class="col-sm-12 col-md-8">
-        <div id="intro_0" class="ease-all hide large-img-bkgd carousel-container"></div>
-        <div id="intro_1" class=" large-img-bkgd carousel-container"></div>
+      <div class="col-md-12 header-spacer5">
+        <div class="py-4 d-flex justify-content-center align-items-center footer-nav-link-color">
+          <a class="mr-4" href="../privacy.html">Privacy & terms</a>
+          <a href="../sitemap.xml">Sitemap</a>
+        </div>
       </div>
-    </div>
-    
-      <div class="row row-content section-padding d-flex justify-content-center pl-5 mx-auto">
-              <div class="row row-content">
-                <div class="col-md-4">
-                  <div class="card card-transparent p-2" style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-transparent p-2" style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-transparent p-2" style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row row-content">
-                <div class="col-4">
-                  <div class="card card-transparent p-2" style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card card-transparent p-2 " style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4  ">
-                  <div class="card card-transparent p-2" style="width: 18rem;">
-                    <div class="image-box"></div>
-                    <div class="card-body ">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="footer-fold">
+        &nbsp;
+        
       </div>
 
 
+  </div>
+</footer>
+
+<!-- Footer -->
+    <!-- Footer Nav -->
 
 
-
-    <footer>
       <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -169,8 +221,6 @@
           }
         }
       </script>
-
-    </footer>
-</body>
+  </body>
 
 </html>
